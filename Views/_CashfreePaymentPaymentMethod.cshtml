@@ -1,0 +1,15 @@
+﻿
+@using Foundation.Features.Checkout.Payments.Cashfree
+
+@model  CashfreePaymentOption
+
+@Html.HiddenFor(model => model.PaymentMethodId)
+
+<br />
+<div class="row">
+    <div class="col-12">
+        <div class="alert alert-info square-box">
+            @Html.TranslateFallback("/Checkout/Payment/Methods/CashfreePayment/Description", "You will be Redirected to Cashfree Payment Gateway.")
+        </div>
+    </div>
+</div>

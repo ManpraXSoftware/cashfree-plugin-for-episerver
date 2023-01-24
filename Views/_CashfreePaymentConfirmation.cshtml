@@ -1,0 +1,28 @@
+﻿@model EPiServer.Commerce.Order.IPayment
+
+<html>
+<body onload="myFunction()">
+
+   <h4>@Html.Translate("/OrderConfirmation/PaymentDetails")</h4>
+    
+   <div>
+         <p id="num" hidden>@Model.Amount</p>
+         <p>@Html.Translate("/OrderConfirmation/PaymentInfo/PaymentStatus")Payment Status: @Model.Status</p>
+         <p>@Html.Translate("/OrderConfirmation/PaymentInfo/PaymentMethod")Payment Type:  Cashfree </p> 
+         <p onload="myFunction()">Total Amount :   
+        @*@if(Model.Properties.ContainsKey("Currency"))
+        {
+            @Model.Properties.Values
+        }*@
+        <span id="result"></span> </p>
+    </div>
+
+<script>
+          var num = document.getElementById("num").innerHTML;
+            
+          function myFunction() { 
+          document.getElementById("result").innerHTML = parseFloat(num).toFixed(2);    
+          } 
+</script>
+</body>
+</html>
