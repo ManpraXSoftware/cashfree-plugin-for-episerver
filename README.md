@@ -7,3 +7,4 @@ Then input the settings for Cashfree payment gateway in tab Parameters.
 
 	You can get these configurations by register the account at https://www.cashfree.com/ and active the account.
 	It is mandatory to fill settings
+
