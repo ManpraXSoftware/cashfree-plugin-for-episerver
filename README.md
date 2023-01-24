@@ -3,9 +3,9 @@
 1.In Commerce Manager, create the Cashfree payment Gateway
 
 > The 
-	System Keyword 
+	**System Keyword** 
 >must have value of 
->	CashfreePayment
+	**CashfreePayment**
 
 Then input the settings for Cashfree payment gateway in tab Parameters.
 
